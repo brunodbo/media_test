@@ -8,7 +8,7 @@ projects:
     type: "core"
     version: "7.34"
 
-  natobs:
+  media_test:
     type: "profile"
     download:
       type: "git"
