@@ -1,0 +1,46 @@
+name = Media test profile
+description = Media test profile.
+version = VERSION
+core = 7.x
+
+; Core
+dependencies[] = block
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = taxonomy
+dependencies[] = dblog
+dependencies[] = field_ui
+dependencies[] = file
+
+; Contrib
+dependencies[] = admin_menu
+dependencies[] = admin_menu_toolbar
+dependencies[] = ckeditor
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = file_entity
+dependencies[] = libraries
+dependencies[] = media
+dependencies[] = media_internet
+dependencies[] = media_vimeo
+dependencies[] = media_wysiwyg
+dependencies[] = media_wysiwyg_view_mode
+dependencies[] = media_youtube
+dependencies[] = views
+dependencies[] = views_ui
+
+; Development
+dependencies[] = devel
+dependencies[] = devel_generate
+dependencies[] = diff
+
+; jQuery update
+dependencies[] = jquery_update
+
+; Files
+files[] = media_test.profile
+

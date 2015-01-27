@@ -1,0 +1,16 @@
+; run it like this: drush make --working-copy --yes --verbose --debug natobs_distro.make.yml natobs_local
+; or, without "verbose" and "debug" flags set: drush make --working-copy --yes natobs_distro.make.yml natobs_local
+api: "2"
+core: "7.x"
+
+projects:
+  drupal:
+    type: "core"
+    version: "7.34"
+
+  natobs:
+    type: "profile"
+    download:
+      type: "git"
+      url: "git@github.com:brunodbo/media_test.git"
+      branch: "master"

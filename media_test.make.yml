@@ -1,0 +1,69 @@
+api: 2
+
+# Set contrib directory.
+defaults:
+  projects:
+    subdir: "contrib"
+core: "7.x"
+
+projects:
+  drupal:
+    type: "core"
+    version: "7.33"
+
+  # NatObs contrib
+  admin_menu:
+    version: "3.0-rc5"
+
+  ckeditor:
+    version: "1.x-dev"
+    patch:
+      # Issue #2159403: Make CKEditor plugin system modular and clean.
+      - "https://www.drupal.org/files/issues/make_ckeditor_plugin-2159403-141.patch"
+
+  ctools:
+    version: "1.5"
+
+  features:
+    version: "2.3"
+
+  file_entity:
+    version: "2.0-beta1"
+
+  libraries:
+    version: "2.2"
+
+  media:
+    version: "2.x-dev"
+
+  media_vimeo:
+    version: "2.0"
+
+  media_youtube:
+    version: "2.x-dev"
+
+  views:
+    version: "3.8"
+
+  # jQuery update
+  jquery_update:
+    version: "2.4"
+
+  # Development
+  devel:
+    version: "1.5"
+    subdir: "development"
+
+  diff:
+    version: "3.2"
+    subdir: "development"
+
+# Libraries
+libraries:
+  # Ckeditor
+  ckeditor:
+    type: "library"
+    download:
+      type: "get"
+      url: "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.3.4/ckeditor_4.3.4_standard.zip"
+    directory_name: "ckeditor"
